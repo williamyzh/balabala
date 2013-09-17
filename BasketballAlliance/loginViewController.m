@@ -42,7 +42,7 @@
     static NSString *cellIdentider = @"teamInfoCell";
     teamInfoCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentider];
     if (cell == nil) {
-        cell = [[[NSBundle mainBundle] loadNibNamed:@"teamInfoCell" owner:nil options:nil] lastObject];
+        cell = [[[NSBundle mainBundle] loadNibNamed:@"teamInfoCell" owner:self options:nil] lastObject];
     }
 //    [cell configWithData:info];
     return cell;
