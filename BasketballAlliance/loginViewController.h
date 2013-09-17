@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface loginViewController : UIViewController
+@property(nonatomic, strong) NSDictionary *info;
 @end

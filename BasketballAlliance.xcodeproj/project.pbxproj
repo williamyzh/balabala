@@ -17,7 +17,9 @@
 		4B37328117E836A300B7003E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B37328017E836A300B7003E /* Default@2x.png */; };
 		4B37328317E836A300B7003E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B37328217E836A300B7003E /* Default-568h@2x.png */; };
 		4B37328617E836A300B7003E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B37328417E836A300B7003E /* MainStoryboard.storyboard */; };
-		4B37328917E836A300B7003E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B37328817E836A300B7003E /* ViewController.m */; };
+		4B37328917E836A300B7003E /* loginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B37328817E836A300B7003E /* loginViewController.m */; };
+		4BF500C517E83DB4001DD694 /* teamInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF500C417E83DB4001DD694 /* teamInfoCell.m */; };
+		4BF500C717E83E39001DD694 /* teamInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BF500C617E83E39001DD694 /* teamInfoCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,8 +37,11 @@
 		4B37328017E836A300B7003E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		4B37328217E836A300B7003E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		4B37328517E836A300B7003E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		4B37328717E836A300B7003E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4B37328817E836A300B7003E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4B37328717E836A300B7003E /* loginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = loginViewController.h; sourceTree = "<group>"; };
+		4B37328817E836A300B7003E /* loginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = loginViewController.m; sourceTree = "<group>"; };
+		4BF500C317E83DB4001DD694 /* teamInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = teamInfoCell.h; sourceTree = "<group>"; };
+		4BF500C417E83DB4001DD694 /* teamInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = teamInfoCell.m; sourceTree = "<group>"; };
+		4BF500C617E83E39001DD694 /* teamInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = teamInfoCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,11 +88,13 @@
 		4B37327217E836A300B7003E /* BasketballAlliance */ = {
 			isa = PBXGroup;
 			children = (
+				4BF500C217E83D85001DD694 /* Images */,
+				4BF500C117E83D7E001DD694 /* Models */,
+				4BF500C017E83D78001DD694 /* Views */,
+				4BF500BF17E83D6C001DD694 /* Controllers */,
 				4B37327B17E836A300B7003E /* AppDelegate.h */,
 				4B37327C17E836A300B7003E /* AppDelegate.m */,
 				4B37328417E836A300B7003E /* MainStoryboard.storyboard */,
-				4B37328717E836A300B7003E /* ViewController.h */,
-				4B37328817E836A300B7003E /* ViewController.m */,
 				4B37327317E836A300B7003E /* Supporting Files */,
 			);
 			path = BasketballAlliance;
@@ -105,6 +112,39 @@
 				4B37328217E836A300B7003E /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4BF500BF17E83D6C001DD694 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4B37328717E836A300B7003E /* loginViewController.h */,
+				4B37328817E836A300B7003E /* loginViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		4BF500C017E83D78001DD694 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4BF500C317E83DB4001DD694 /* teamInfoCell.h */,
+				4BF500C417E83DB4001DD694 /* teamInfoCell.m */,
+				4BF500C617E83E39001DD694 /* teamInfoCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		4BF500C117E83D7E001DD694 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		4BF500C217E83D85001DD694 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +203,7 @@
 				4B37328117E836A300B7003E /* Default@2x.png in Resources */,
 				4B37328317E836A300B7003E /* Default-568h@2x.png in Resources */,
 				4B37328617E836A300B7003E /* MainStoryboard.storyboard in Resources */,
+				4BF500C717E83E39001DD694 /* teamInfoCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,7 +216,8 @@
 			files = (
 				4B37327917E836A300B7003E /* main.m in Sources */,
 				4B37327D17E836A300B7003E /* AppDelegate.m in Sources */,
-				4B37328917E836A300B7003E /* ViewController.m in Sources */,
+				4B37328917E836A300B7003E /* loginViewController.m in Sources */,
+				4BF500C517E83DB4001DD694 /* teamInfoCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +340,7 @@
 				4B37328E17E836A300B7003E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
