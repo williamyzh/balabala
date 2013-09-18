@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B2C3AE317E98DF9005CDD7A /* loginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B2C3AE217E98DF9005CDD7A /* loginView.xib */; };
+		4B2C3AE717E9A6BF005CDD7A /* homeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B2C3AE517E9A6BF005CDD7A /* homeViewController.m */; };
+		4B2C3AE817E9A6BF005CDD7A /* homeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B2C3AE617E9A6BF005CDD7A /* homeViewController.xib */; };
 		4B37326D17E836A300B7003E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B37326C17E836A300B7003E /* UIKit.framework */; };
 		4B37326F17E836A300B7003E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B37326E17E836A300B7003E /* Foundation.framework */; };
 		4B37327117E836A300B7003E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B37327017E836A300B7003E /* CoreGraphics.framework */; };
@@ -18,11 +21,17 @@
 		4B37328317E836A300B7003E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B37328217E836A300B7003E /* Default-568h@2x.png */; };
 		4B37328617E836A300B7003E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B37328417E836A300B7003E /* MainStoryboard.storyboard */; };
 		4B37328917E836A300B7003E /* loginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B37328817E836A300B7003E /* loginViewController.m */; };
+		4B9B97AC17E9410B006F64AC /* teamSybol.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B9B97AB17E9410B006F64AC /* teamSybol.jpg */; };
+		4B9B97B317E9490D006F64AC /* loginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B9B97B217E9490D006F64AC /* loginView.m */; };
 		4BF500C517E83DB4001DD694 /* teamInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF500C417E83DB4001DD694 /* teamInfoCell.m */; };
 		4BF500C717E83E39001DD694 /* teamInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BF500C617E83E39001DD694 /* teamInfoCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B2C3AE217E98DF9005CDD7A /* loginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = loginView.xib; sourceTree = "<group>"; };
+		4B2C3AE417E9A6BF005CDD7A /* homeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = homeViewController.h; sourceTree = "<group>"; };
+		4B2C3AE517E9A6BF005CDD7A /* homeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = homeViewController.m; sourceTree = "<group>"; };
+		4B2C3AE617E9A6BF005CDD7A /* homeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = homeViewController.xib; sourceTree = "<group>"; };
 		4B37326917E836A300B7003E /* BasketballAlliance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasketballAlliance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B37326C17E836A300B7003E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4B37326E17E836A300B7003E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -39,6 +48,9 @@
 		4B37328517E836A300B7003E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		4B37328717E836A300B7003E /* loginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = loginViewController.h; sourceTree = "<group>"; };
 		4B37328817E836A300B7003E /* loginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = loginViewController.m; sourceTree = "<group>"; };
+		4B9B97AB17E9410B006F64AC /* teamSybol.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = teamSybol.jpg; sourceTree = "<group>"; };
+		4B9B97B117E9490D006F64AC /* loginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loginView.h; sourceTree = "<group>"; };
+		4B9B97B217E9490D006F64AC /* loginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = loginView.m; sourceTree = "<group>"; };
 		4BF500C317E83DB4001DD694 /* teamInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = teamInfoCell.h; sourceTree = "<group>"; };
 		4BF500C417E83DB4001DD694 /* teamInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = teamInfoCell.m; sourceTree = "<group>"; };
 		4BF500C617E83E39001DD694 /* teamInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = teamInfoCell.xib; sourceTree = "<group>"; };
@@ -105,6 +117,7 @@
 			children = (
 				4B37327417E836A300B7003E /* BasketballAlliance-Info.plist */,
 				4B37327517E836A300B7003E /* InfoPlist.strings */,
+				4B9B97AB17E9410B006F64AC /* teamSybol.jpg */,
 				4B37327817E836A300B7003E /* main.m */,
 				4B37327A17E836A300B7003E /* BasketballAlliance-Prefix.pch */,
 				4B37327E17E836A300B7003E /* Default.png */,
@@ -119,6 +132,9 @@
 			children = (
 				4B37328717E836A300B7003E /* loginViewController.h */,
 				4B37328817E836A300B7003E /* loginViewController.m */,
+				4B2C3AE417E9A6BF005CDD7A /* homeViewController.h */,
+				4B2C3AE517E9A6BF005CDD7A /* homeViewController.m */,
+				4B2C3AE617E9A6BF005CDD7A /* homeViewController.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -129,6 +145,9 @@
 				4BF500C317E83DB4001DD694 /* teamInfoCell.h */,
 				4BF500C417E83DB4001DD694 /* teamInfoCell.m */,
 				4BF500C617E83E39001DD694 /* teamInfoCell.xib */,
+				4B9B97B117E9490D006F64AC /* loginView.h */,
+				4B9B97B217E9490D006F64AC /* loginView.m */,
+				4B2C3AE217E98DF9005CDD7A /* loginView.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -204,6 +223,9 @@
 				4B37328317E836A300B7003E /* Default-568h@2x.png in Resources */,
 				4B37328617E836A300B7003E /* MainStoryboard.storyboard in Resources */,
 				4BF500C717E83E39001DD694 /* teamInfoCell.xib in Resources */,
+				4B9B97AC17E9410B006F64AC /* teamSybol.jpg in Resources */,
+				4B2C3AE317E98DF9005CDD7A /* loginView.xib in Resources */,
+				4B2C3AE817E9A6BF005CDD7A /* homeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +240,8 @@
 				4B37327D17E836A300B7003E /* AppDelegate.m in Sources */,
 				4B37328917E836A300B7003E /* loginViewController.m in Sources */,
 				4BF500C517E83DB4001DD694 /* teamInfoCell.m in Sources */,
+				4B9B97B317E9490D006F64AC /* loginView.m in Sources */,
+				4B2C3AE717E9A6BF005CDD7A /* homeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

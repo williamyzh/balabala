@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "homeViewController.h"
 @interface loginViewController : UIViewController
 @property(nonatomic, strong) NSDictionary *info;
 @end

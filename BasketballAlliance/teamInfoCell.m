@@ -35,6 +35,6 @@
 }
 
 - (void)configWithData:(NSDictionary *)dic{
-    
+    self.teamSybol.image = dic[@"image"];
 }
 @end
