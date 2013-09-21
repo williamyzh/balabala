@@ -18,7 +18,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-        self.VSHistory = [[UITableView alloc] initWithFrame:frame style:UITableViewStylePlain];
+        self.VSHistory = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 320, 280) style:UITableViewStylePlain];
         self.VSHistory.delegate = self;
         self.VSHistory.dataSource = self;
         [self addSubview:self.VSHistory];
@@ -52,7 +52,7 @@
     if (indexPath.row == 1) {
         cell.textLabel.text = @"对战史";
     }
-    cell.textLabel.text = @"12年9月 VS 森林狼";
+    cell.textLabel.text = @"12年9月 VS 森林狼  胜";
     return cell;
 
 }

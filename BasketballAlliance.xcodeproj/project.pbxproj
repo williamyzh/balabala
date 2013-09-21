@@ -29,6 +29,7 @@
 		4B9B97B317E9490D006F64AC /* loginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B9B97B217E9490D006F64AC /* loginView.m */; };
 		4BBAAF1317EC224D00331797 /* propDetailOfTeamView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BBAAF1217EC224D00331797 /* propDetailOfTeamView.m */; };
 		4BBAAF2017ECBA4D00331797 /* teamVSView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BBAAF1F17ECBA4D00331797 /* teamVSView.m */; };
+		4BBAAF2717ED555300331797 /* teamMatesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BBAAF2617ED555300331797 /* teamMatesView.m */; };
 		4BF500C517E83DB4001DD694 /* teamInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF500C417E83DB4001DD694 /* teamInfoCell.m */; };
 		4BF500C717E83E39001DD694 /* teamInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BF500C617E83E39001DD694 /* teamInfoCell.xib */; };
 /* End PBXBuildFile section */
@@ -69,6 +70,8 @@
 		4BBAAF1217EC224D00331797 /* propDetailOfTeamView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = propDetailOfTeamView.m; sourceTree = "<group>"; };
 		4BBAAF1E17ECBA4C00331797 /* teamVSView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = teamVSView.h; sourceTree = "<group>"; };
 		4BBAAF1F17ECBA4D00331797 /* teamVSView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = teamVSView.m; sourceTree = "<group>"; };
+		4BBAAF2517ED555300331797 /* teamMatesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = teamMatesView.h; sourceTree = "<group>"; };
+		4BBAAF2617ED555300331797 /* teamMatesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = teamMatesView.m; sourceTree = "<group>"; };
 		4BF500C317E83DB4001DD694 /* teamInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = teamInfoCell.h; sourceTree = "<group>"; };
 		4BF500C417E83DB4001DD694 /* teamInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = teamInfoCell.m; sourceTree = "<group>"; };
 		4BF500C617E83E39001DD694 /* teamInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = teamInfoCell.xib; sourceTree = "<group>"; };
@@ -178,6 +181,8 @@
 				4BBAAF1217EC224D00331797 /* propDetailOfTeamView.m */,
 				4BBAAF1E17ECBA4C00331797 /* teamVSView.h */,
 				4BBAAF1F17ECBA4D00331797 /* teamVSView.m */,
+				4BBAAF2517ED555300331797 /* teamMatesView.h */,
+				4BBAAF2617ED555300331797 /* teamMatesView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -278,6 +283,7 @@
 				4B68F1F417EC163100E6A02F /* myViewController.m in Sources */,
 				4BBAAF1317EC224D00331797 /* propDetailOfTeamView.m in Sources */,
 				4BBAAF2017ECBA4D00331797 /* teamVSView.m in Sources */,
+				4BBAAF2717ED555300331797 /* teamMatesView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

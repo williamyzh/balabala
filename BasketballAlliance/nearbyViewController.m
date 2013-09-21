@@ -84,7 +84,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSDictionary *dic = [[NSDictionary alloc] initWithObjectsAndKeys:@"teamSybol.jpg",@"image",@"魔术",@"teamname",@"永不放弃",@"teamdeclation",@"五星",@"teamscore",@"王铁尧",@"teamleader",@"张飞 关羽 刘备",@"teammates",nil];
-    [UIView animateWithDuration:1.0f animations:^{
+    [UIView animateWithDuration:1.5f animations:^{
         [self.view addSubview:self.propDetailOfTeam];
         [self.view addSubview:self.teamVS];
     } completion:^(BOOL finished) {

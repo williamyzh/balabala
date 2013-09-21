@@ -7,13 +7,13 @@
 //
 
 #import "teammatesViewController.h"
-
+#import "teamMatesView.h"
 @interface teammatesViewController ()
-
+@property(nonatomic, strong)teamMatesView *teammatesList;
 @end
 
 @implementation teammatesViewController
-
+@synthesize teammatesList = _teammatesList;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -22,7 +22,12 @@
     }
     return self;
 }
-
+- (teamMatesView *)teammatesList{
+    if (_teammatesList == nil) {
+        _teammatesList = [[teamMatesView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
+    }
+    return _teammatesList;
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -31,6 +36,7 @@
     UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
     label.text = @"teammates";
     [self.view addSubview:label];
+    [self.view addSubview:self.teammatesList];
 }
 
 - (void)didReceiveMemoryWarning
