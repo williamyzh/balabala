@@ -67,8 +67,6 @@
 -(void)loginbutton{
     NSLog(@"log in");
     homeViewController *home = [[homeViewController alloc] init];
-    [self presentViewController:home animated:YES completion:^{
-        
-    }];
+    [self.navigationController pushViewController:home animated:YES];
 }
 @end

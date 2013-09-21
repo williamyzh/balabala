@@ -119,7 +119,7 @@
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
 				<object class="IBPartialClassDescription">
 					<string key="className">homeViewController</string>
-					<string key="superclassName">UIViewController</string>
+					<string key="superclassName">UITabBarController</string>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
 						<string key="minorKey">./Classes/homeViewController.h</string>
