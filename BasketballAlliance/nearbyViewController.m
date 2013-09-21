@@ -20,6 +20,7 @@
 @synthesize nearbyTeam = _nearbyTeam;
 @synthesize propDetailOfTeam = _propDetailOfTeam;
 @synthesize teamVS = _teamVS;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -28,6 +29,7 @@
     }
     return self;
 }
+
 - (propDetailOfTeamView *)propDetailOfTeam{
     if (_propDetailOfTeam == nil) {
         _propDetailOfTeam = [[propDetailOfTeamView alloc] initWithFrame:CGRectMake(0, 0, 320, 200)];
@@ -36,14 +38,15 @@
     }
     return _propDetailOfTeam;
 }
+
 - (teamVSView *)teamVS
 {
     if (_teamVS == nil) {
         _teamVS = [[teamVSView alloc] initWithFrame:CGRectMake(0, 200, 320, 280)];
     }
     return _teamVS;
-    
 }
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];

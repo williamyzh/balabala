@@ -13,6 +13,7 @@
 @end
 @implementation teamMatesView
 @synthesize teamMatesList = _teamMatesList;
+
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
@@ -55,6 +56,5 @@
         
     }
     return cell;
-
 }
 @end

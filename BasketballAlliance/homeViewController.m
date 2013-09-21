@@ -22,6 +22,7 @@
     }
     return self;
 }
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -36,7 +37,6 @@
     [[self.tabBar.items objectAtIndex:1] setTitle:@"队友 "];
     [[self.tabBar.items objectAtIndex:2] setTitle:@"公告"];
     [[self.tabBar.items objectAtIndex:3] setTitle:@"我的"];
-
 }
 
 - (void)didReceiveMemoryWarning

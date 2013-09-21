@@ -18,6 +18,7 @@
 @synthesize teamDelartion = _teamDelartion;
 @synthesize teamSybol = _teamSybol;
 @synthesize teamName = _teamName;
+
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];

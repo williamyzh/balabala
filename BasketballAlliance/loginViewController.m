@@ -17,6 +17,7 @@
 @implementation loginViewController
 @synthesize infotable;
 @synthesize info;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -38,7 +39,7 @@
     return 20;
 }
 
--(float)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+- (float)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 83.0f;
 }
 
@@ -50,7 +51,6 @@
     }
     [cell configWithData:info];
     return cell;
-   
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -64,7 +64,8 @@
         NSLog(@"good");
     }];
 }
--(void)loginbutton{
+#pragma mark - selfMethod
+- (void)loginbutton{
     NSLog(@"log in");
     homeViewController *home = [[homeViewController alloc] init];
     [self.navigationController pushViewController:home animated:YES];

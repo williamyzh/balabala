@@ -13,6 +13,7 @@
 @end
 @implementation teamVSView
 @synthesize VSHistory = _VSHistory;
+
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
@@ -37,10 +38,12 @@
 - (void)configWithData:(NSDictionary *)data{
     
 }
+
 #pragma mark - tableviewDatesource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return 10;
 }
+
 #pragma mark - tableviewDelegate
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *teamVSViewiden = @"teamVSViewIdenti";
@@ -55,7 +58,6 @@
         cell.textLabel.text = @"12年9月 VS 森林狼  胜";
     }
     return cell;
-
 }
 
 @end

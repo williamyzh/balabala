@@ -8,12 +8,14 @@
 
 #import "teammatesViewController.h"
 #import "teamMatesView.h"
+
 @interface teammatesViewController ()
 @property(nonatomic, strong)teamMatesView *teammatesList;
 @end
 
 @implementation teammatesViewController
 @synthesize teammatesList = _teammatesList;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];

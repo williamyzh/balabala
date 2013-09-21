@@ -25,6 +25,7 @@
 @synthesize teamDeclation = _teamDeclation;
 @synthesize teamScore = _teamScore;
 @synthesize teamLeader = _teamLeader;
+
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
@@ -55,7 +56,7 @@
     // Drawing code
 }
 */
--(void)configWithPerData:(NSDictionary *)data{
+- (void)configWithPerData:(NSDictionary *)data{
     self.teamSybol.image = [UIImage imageNamed:[data objectForKey:@"image"]];
     self.teamName.text = data[@"teamname"];
     self.teamMates.text = data[@"teammates"];
@@ -63,4 +64,5 @@
     self.teamDeclation.text = data[@"teamdeclation"];
     self.teamScore.text  = data[@"teamscore"];
 }
+
 @end
