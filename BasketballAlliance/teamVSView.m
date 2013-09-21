@@ -49,10 +49,11 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:teamVSViewiden];
         
     }
-    if (indexPath.row == 1) {
+    if (indexPath.row == 0) {
         cell.textLabel.text = @"对战史";
+    }else{
+        cell.textLabel.text = @"12年9月 VS 森林狼  胜";
     }
-    cell.textLabel.text = @"12年9月 VS 森林狼  胜";
     return cell;
 
 }
