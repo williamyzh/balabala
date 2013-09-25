@@ -6,15 +6,15 @@
 //  Copyright (c) 2013年 Anjuke Inc. All rights reserved.
 //
 
-#import "loginView.h"
+#import "LoginView.h"
 
-@interface loginView ()<UITextFieldDelegate>
+@interface LoginView ()<UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *PressLogin;
 @property(nonatomic, strong)IBOutlet UITextField *account;
 @property(nonatomic, strong)IBOutlet UITextField *password;
 @property(nonatomic) BOOL keyboardShow;
 @end
-@implementation loginView
+@implementation LoginView
 @synthesize account = _account;
 @synthesize password = _password;
 @synthesize PressLogin = _PressLogin;

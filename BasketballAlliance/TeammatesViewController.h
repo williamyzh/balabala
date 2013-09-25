@@ -1,5 +1,5 @@
 //
-//  noticeViewController.h
+//  teammatesViewController.h
 //  BasketballAlliance
 //
 //  Created by 杨 志豪 on 9/20/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface noticeViewController : UIViewController
+@interface TeammatesViewController : UIViewController
 
 @end

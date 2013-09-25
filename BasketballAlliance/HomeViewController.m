@@ -6,13 +6,13 @@
 //  Copyright (c) 2013 Anjuke Inc. All rights reserved.
 //
 
-#import "homeViewController.h"
+#import "HomeViewController.h"
 
-@interface homeViewController ()
+@interface HomeViewController ()
 
 @end
 
-@implementation homeViewController
+@implementation HomeViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,10 +27,10 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    nearbyViewController *nearby = [[nearbyViewController alloc] init];
-    teammatesViewController *teammates = [[teammatesViewController alloc] init];
-    noticeViewController *notice = [[noticeViewController alloc] init];
-    myViewController *myself = [[myViewController alloc] init];
+    NearbyViewController *nearby = [[NearbyViewController alloc] init];
+    TeammatesViewController *teammates = [[TeammatesViewController alloc] init];
+    NoticeViewController *notice = [[NoticeViewController alloc] init];
+    MyViewController *myself = [[MyViewController alloc] init];
     NSArray *controllerArray = [[NSArray alloc]initWithObjects:nearby,teammates,notice,myself, nil];
     self.viewControllers = controllerArray;
     [[self.tabBar.items objectAtIndex:0] setTitle:@"附近"];

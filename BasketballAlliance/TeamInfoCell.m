@@ -6,14 +6,14 @@
 //  Copyright (c) 2013年 Anjuke Inc. All rights reserved.
 //
 
-#import "teamInfoCell.h"
+#import "TeamInfoCell.h"
 
-@interface teamInfoCell ()
+@interface TeamInfoCell ()
 @property(nonatomic, strong) IBOutlet UILabel *teamName;
 @property(nonatomic, strong) IBOutlet UILabel *teamDelartion;
 @property(nonatomic, strong) IBOutlet UIImageView *teamSybol;
 @end
-@implementation teamInfoCell
+@implementation TeamInfoCell
 @synthesize teamInfo = _teamInfo;
 @synthesize teamDelartion = _teamDelartion;
 @synthesize teamSybol = _teamSybol;

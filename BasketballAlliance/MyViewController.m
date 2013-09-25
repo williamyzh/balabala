@@ -1,18 +1,18 @@
 //
-//  noticeViewController.m
+//  myViewController.m
 //  BasketballAlliance
 //
 //  Created by 杨 志豪 on 9/20/13.
 //  Copyright (c) 2013 Anjuke Inc. All rights reserved.
 //
 
-#import "noticeViewController.h"
+#import "MyViewController.h"
 
-@interface noticeViewController ()
+@interface MyViewController ()
 
 @end
 
-@implementation noticeViewController
+@implementation MyViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,7 +29,7 @@
 	// Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
     UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
-    label.text = @"notice";
+    label.text = @"myself";
     [self.view addSubview:label];
 }
 

@@ -1,5 +1,5 @@
 //
-//  teamInfoCell.h
+//  ViewController.h
 //  BasketballAlliance
 //
 //  Created by 杨 志豪 on 13-9-17.
@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HomeViewController.h"
 
-@interface teamInfoCell : UITableViewCell
-@property(nonatomic, strong) NSDictionary *teamInfo ;
-- (void)configWithData:(NSDictionary *)dic;
+@interface LoginViewController : UIViewController
+@property(nonatomic, strong) NSDictionary *info;
 @end

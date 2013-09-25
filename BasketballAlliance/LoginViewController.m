@@ -6,15 +6,15 @@
 //  Copyright (c) 2013年 Anjuke Inc. All rights reserved.
 //
 
-#import "loginViewController.h"
-#import "teamInfoCell.h"
-#import "loginView.h"
+#import "LoginViewController.h"
+#import "TeamInfoCell.h"
+#import "LoginView.h"
 
-@interface loginViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface LoginViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic, strong) UITableView *infotable;
 @end
 
-@implementation loginViewController
+@implementation LoginViewController
 @synthesize infotable;
 @synthesize info;
 
@@ -43,18 +43,18 @@
     return 83.0f;
 }
 
-- (teamInfoCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+- (TeamInfoCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *cellIdentider = @"teamInfoCell";
-    teamInfoCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentider];
+    TeamInfoCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentider];
     if (cell == nil) {
-        cell = [[[NSBundle mainBundle] loadNibNamed:@"teamInfoCell" owner:self options:nil] lastObject];
+        cell = [[[NSBundle mainBundle] loadNibNamed:@"TeamInfoCell" owner:self options:nil] lastObject];
     }
     [cell configWithData:info];
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    loginView *loginview = [[[NSBundle mainBundle] loadNibNamed:@"loginView" owner:self options:nil] lastObject];
+    LoginView *loginview = [[[NSBundle mainBundle] loadNibNamed:@"LoginView" owner:self options:nil] lastObject];
     loginview.frame =CGRectMake(1200, 0, 320, 480);
     loginview.delegate = self;
     [self.view addSubview:loginview];
@@ -67,7 +67,7 @@
 #pragma mark - selfMethod
 - (void)loginbutton{
     NSLog(@"log in");
-    homeViewController *home = [[homeViewController alloc] init];
+    HomeViewController *home = [[HomeViewController alloc] init];
     [self.navigationController pushViewController:home animated:YES];
 }
 @end

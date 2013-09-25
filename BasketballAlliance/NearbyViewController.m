@@ -6,17 +6,17 @@
 //  Copyright (c) 2013 Anjuke Inc. All rights reserved.
 //
 
-#import "nearbyViewController.h"
-#import "teamInfoCell.h"
-#import "propDetailOfTeamView.h"
-#import "teamVSView.h"
-@interface nearbyViewController ()<UITableViewDataSource,UITableViewDelegate>;
+#import "NearbyViewController.h"
+#import "TeamInfoCell.h"
+#import "PropDetailOfTeamView.h"
+#import "TeamVSView.h"
+@interface NearbyViewController ()<UITableViewDataSource,UITableViewDelegate>;
 @property(nonatomic, strong) UITableView *nearbyTeam;
-@property(nonatomic, strong) propDetailOfTeamView *propDetailOfTeam;
-@property(nonatomic, strong) teamVSView *teamVS;
+@property(nonatomic, strong) PropDetailOfTeamView *propDetailOfTeam;
+@property(nonatomic, strong) TeamVSView *teamVS;
 @end
 
-@implementation nearbyViewController
+@implementation NearbyViewController
 @synthesize nearbyTeam = _nearbyTeam;
 @synthesize propDetailOfTeam = _propDetailOfTeam;
 @synthesize teamVS = _teamVS;
@@ -30,19 +30,19 @@
     return self;
 }
 
-- (propDetailOfTeamView *)propDetailOfTeam{
+- (PropDetailOfTeamView *)propDetailOfTeam{
     if (_propDetailOfTeam == nil) {
-        _propDetailOfTeam = [[propDetailOfTeamView alloc] initWithFrame:CGRectMake(0, 0, 320, 200)];
+        _propDetailOfTeam = [[PropDetailOfTeamView alloc] initWithFrame:CGRectMake(0, 0, 320, 200)];
         _propDetailOfTeam.backgroundColor = [UIColor blackColor];
 
     }
     return _propDetailOfTeam;
 }
 
-- (teamVSView *)teamVS
+- (TeamVSView *)teamVS
 {
     if (_teamVS == nil) {
-        _teamVS = [[teamVSView alloc] initWithFrame:CGRectMake(0, 200, 320, 280)];
+        _teamVS = [[TeamVSView alloc] initWithFrame:CGRectMake(0, 200, 320, 280)];
     }
     return _teamVS;
 }
@@ -75,9 +75,9 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *cellidenti = @"nearbyCell";
-    teamInfoCell *nearbycell = [tableView dequeueReusableCellWithIdentifier:cellidenti];
+    TeamInfoCell *nearbycell = [tableView dequeueReusableCellWithIdentifier:cellidenti];
     if (nearbycell == nil) {
-        nearbycell = [[[NSBundle mainBundle] loadNibNamed:@"teamInfoCell" owner:self options:nil]lastObject];
+        nearbycell = [[[NSBundle mainBundle] loadNibNamed:@"TeamInfoCell" owner:self options:nil]lastObject];
     }
     NSDictionary *info = [NSDictionary dictionaryWithObject:[UIImage imageNamed:@"teamSybol.jpg"] forKey:@"image"];
     [nearbycell configWithData:info];

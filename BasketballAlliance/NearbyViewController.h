@@ -1,5 +1,5 @@
 //
-//  myViewController.h
+//  nearbyViewController.h
 //  BasketballAlliance
 //
 //  Created by 杨 志豪 on 9/20/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface myViewController : UIViewController
-
+@interface NearbyViewController : UIViewController
+-(void)configWithData:(NSDictionary *)data;
 @end

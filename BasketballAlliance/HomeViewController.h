@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "nearbyViewController.h"
-#import "teammatesViewController.h"
-#import "noticeViewController.h"
-#import "myViewController.h"
+#import "NearbyViewController.h"
+#import "TeammatesViewController.h"
+#import "NoticeViewController.h"
+#import "MyViewController.h"
 
-@interface homeViewController : UITabBarController
+@interface HomeViewController : UITabBarController
 
 @end

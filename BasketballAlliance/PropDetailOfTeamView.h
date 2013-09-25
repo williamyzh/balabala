@@ -1,5 +1,5 @@
 //
-//  nearbyViewController.h
+//  propDetailOfTeamView.h
 //  BasketballAlliance
 //
 //  Created by 杨 志豪 on 9/20/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface nearbyViewController : UIViewController
--(void)configWithData:(NSDictionary *)data;
+@interface PropDetailOfTeamView : UIView
+- (void)configWithPerData:(NSDictionary *)data;
 @end
