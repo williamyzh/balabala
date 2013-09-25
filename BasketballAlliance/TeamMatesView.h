@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface teamMatesView : UIView
+@interface TeamMatesView : UIView
 
 @end

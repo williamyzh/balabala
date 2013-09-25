@@ -6,12 +6,12 @@
 //  Copyright (c) 2013 Anjuke Inc. All rights reserved.
 //
 
-#import "teamVSView.h"
+#import "TeamVSView.h"
 
-@interface teamVSView ()<UITableViewDataSource,UITableViewDelegate>
+@interface TeamVSView ()<UITableViewDataSource,UITableViewDelegate>
 @property(nonatomic, strong)UITableView *VSHistory;
 @end
-@implementation teamVSView
+@implementation TeamVSView
 @synthesize VSHistory = _VSHistory;
 
 - (id)initWithFrame:(CGRect)frame

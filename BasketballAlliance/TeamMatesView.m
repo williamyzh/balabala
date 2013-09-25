@@ -6,12 +6,12 @@
 //  Copyright (c) 2013 Anjuke Inc. All rights reserved.
 //
 
-#import "teamMatesView.h"
+#import "TeamMatesView.h"
 
-@interface teamMatesView ()<UITableViewDataSource,UITableViewDelegate>
+@interface TeamMatesView ()<UITableViewDataSource,UITableViewDelegate>
 @property(nonatomic, strong)UITableView *teamMatesList;
 @end
-@implementation teamMatesView
+@implementation TeamMatesView
 @synthesize teamMatesList = _teamMatesList;
 
 - (id)initWithFrame:(CGRect)frame
@@ -46,14 +46,12 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:teammates];
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:teammates];
-        
     }
     if (indexPath.row == 1) {
         cell.textLabel.text = @"张三";
     }
     if (indexPath.row == 2) {
         cell.textLabel.text = @"李四";
-        
     }
     return cell;
 }

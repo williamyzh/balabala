@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface teamVSView : UIView
+@interface TeamVSView : UIView
 - (void)configWithData:(NSDictionary *)data;
 @end

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface loginView : UIView
+@interface LoginView : UIView
 @property(nonatomic, retain) id delegate;
 @end

@@ -6,14 +6,14 @@
 //  Copyright (c) 2013 Anjuke Inc. All rights reserved.
 //
 
-#import "teammatesViewController.h"
-#import "teamMatesView.h"
+#import "TeammatesViewController.h"
+#import "TeamMatesView.h"
 
-@interface teammatesViewController ()
-@property(nonatomic, strong)teamMatesView *teammatesList;
+@interface TeammatesViewController ()
+@property(nonatomic, strong)TeamMatesView *teammatesList;
 @end
 
-@implementation teammatesViewController
+@implementation TeammatesViewController
 @synthesize teammatesList = _teammatesList;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -24,9 +24,9 @@
     }
     return self;
 }
-- (teamMatesView *)teammatesList{
+- (TeamMatesView *)teammatesList{
     if (_teammatesList == nil) {
-        _teammatesList = [[teamMatesView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
+        _teammatesList = [[TeamMatesView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
     }
     return _teammatesList;
 }

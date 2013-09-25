@@ -8,9 +8,9 @@
 #define PRODETAIL_LABEL_WIDTH 100
 #define PRODETAIL_LABEL_HEIGH 30
 #define PRODETAIL_LABEL_X 180
-#import "propDetailOfTeamView.h"
+#import "PropDetailOfTeamView.h"
 
-@interface propDetailOfTeamView ()
+@interface PropDetailOfTeamView ()
 @property(nonatomic, strong) UIImageView *teamSybol;
 @property(nonatomic, strong) UILabel *teamName;
 @property(nonatomic, strong) UILabel *teamLeader;
@@ -18,7 +18,7 @@
 @property(nonatomic, strong) UILabel *teamDeclation;
 @property(nonatomic, strong) UILabel *teamScore;
 @end
-@implementation propDetailOfTeamView
+@implementation PropDetailOfTeamView
 @synthesize teamSybol = _teamSybol;
 @synthesize teamName = _teamName;
 @synthesize teamMates = _teamMates;
