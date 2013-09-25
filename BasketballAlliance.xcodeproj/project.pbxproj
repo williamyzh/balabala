@@ -19,6 +19,8 @@
 		4B37328317E836A300B7003E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B37328217E836A300B7003E /* Default-568h@2x.png */; };
 		4B37328617E836A300B7003E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B37328417E836A300B7003E /* MainStoryboard.storyboard */; };
 		4B37328917E836A300B7003E /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B37328817E836A300B7003E /* LoginViewController.m */; };
+		4B4B926E17F33A55000DC349 /* PersonDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4B926D17F33A55000DC349 /* PersonDetailView.m */; };
+		4B4B927017F33DC7000DC349 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B4B926F17F33DC7000DC349 /* QuartzCore.framework */; };
 		4B68F1E717EC155600E6A02F /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B68F1E517EC155600E6A02F /* HomeViewController.m */; };
 		4B68F1E817EC155600E6A02F /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B68F1E617EC155600E6A02F /* HomeViewController.xib */; };
 		4B68F1EB17EC15ED00E6A02F /* NearbyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B68F1EA17EC15ED00E6A02F /* NearbyViewController.m */; };
@@ -52,6 +54,9 @@
 		4B37328517E836A300B7003E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		4B37328717E836A300B7003E /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		4B37328817E836A300B7003E /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		4B4B926C17F33A55000DC349 /* PersonDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonDetailView.h; sourceTree = "<group>"; };
+		4B4B926D17F33A55000DC349 /* PersonDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonDetailView.m; sourceTree = "<group>"; };
+		4B4B926F17F33DC7000DC349 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4B68F1E417EC155500E6A02F /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		4B68F1E517EC155600E6A02F /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		4B68F1E617EC155600E6A02F /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
@@ -82,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B4B927017F33DC7000DC349 /* QuartzCore.framework in Frameworks */,
 				4B37326D17E836A300B7003E /* UIKit.framework in Frameworks */,
 				4B37326F17E836A300B7003E /* Foundation.framework in Frameworks */,
 				4B37327117E836A300B7003E /* CoreGraphics.framework in Frameworks */,
@@ -111,6 +117,7 @@
 		4B37326B17E836A300B7003E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4B4B926F17F33DC7000DC349 /* QuartzCore.framework */,
 				4B37326C17E836A300B7003E /* UIKit.framework */,
 				4B37326E17E836A300B7003E /* Foundation.framework */,
 				4B37327017E836A300B7003E /* CoreGraphics.framework */,
@@ -183,6 +190,8 @@
 				4BBAAF1F17ECBA4D00331797 /* TeamVSView.m */,
 				4BBAAF2517ED555300331797 /* TeamMatesView.h */,
 				4BBAAF2617ED555300331797 /* TeamMatesView.m */,
+				4B4B926C17F33A55000DC349 /* PersonDetailView.h */,
+				4B4B926D17F33A55000DC349 /* PersonDetailView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -284,6 +293,7 @@
 				4BBAAF1317EC224D00331797 /* PropDetailOfTeamView.m in Sources */,
 				4BBAAF2017ECBA4D00331797 /* TeamVSView.m in Sources */,
 				4BBAAF2717ED555300331797 /* TeamMatesView.m in Sources */,
+				4B4B926E17F33A55000DC349 /* PersonDetailView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
