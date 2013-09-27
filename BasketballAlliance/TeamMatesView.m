@@ -7,6 +7,7 @@
 //
 
 #import "TeamMatesView.h"
+#import "PersonDetailView.h"
 
 @interface TeamMatesView ()<UITableViewDataSource,UITableViewDelegate>
 @property(nonatomic, strong)UITableView *teamMatesList;
@@ -48,11 +49,25 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:teammates];
     }
     if (indexPath.row == 1) {
-        cell.textLabel.text = @"张三";
+        cell.textLabel.text = @"张勇";
     }
     if (indexPath.row == 2) {
-        cell.textLabel.text = @"李四";
+        cell.textLabel.text = @"田飞";
     }
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSInteger row = [indexPath row];
+    if (row == 1) {
+        PersonDetailView *detaiView = [[PersonDetailView alloc] initWithFrame:CGRectMake(1024, 0, self.frame.size.width, self.frame.size.height)];
+        [self addSubview:detaiView];
+        [UIView animateWithDuration:0.687f animations:^{
+            detaiView.frame = CGRectMake(0, 0,self.frame.size.width, self.frame.size.height);
+        } completion:^(BOOL finished) {
+            
+        }];
+        
+    }
 }
 @end
