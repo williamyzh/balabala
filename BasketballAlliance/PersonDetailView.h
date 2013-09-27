@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface PersonDetailView : UIView
-
+- (void)configWithData:(NSDictionary *)dic;
 @end

@@ -42,19 +42,39 @@
     if (self) {
         //personal image
         self.personImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+        self.backgroundColor = [UIColor whiteColor];
         
         //name and alias
-        UIView *nameAndAliasView = [[UIView alloc] initWithFrame:CGRectMake(120, 0, 100, 100)];
-        self.name =[[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 40)];
-        self.alias = [[UILabel alloc] initWithFrame:CGRectMake(0, 40, 100, 40)];
+        UIView *nameAndAliasView = [[UIView alloc] initWithFrame:CGRectMake(120, 0, 200,130)];
+        nameAndAliasView.backgroundColor = [UIColor whiteColor];
+        UILabel *mingzi =[[UILabel alloc] initWithFrame:CGRectMake(20, 0, 100, 40)];
+        [mingzi setBackgroundColor:[UIColor clearColor]];
+        mingzi.text = @"姓名:";
+        [nameAndAliasView addSubview:mingzi];
+        self.name =[[UILabel alloc] initWithFrame:CGRectMake(65, 0, 120, 40)];
+        
+        UILabel *zhuohao =[[UILabel alloc] initWithFrame:CGRectMake(20, 50, 100, 40)];
+        [zhuohao setBackgroundColor:[UIColor clearColor]];
+        zhuohao.text = @"绰号:";
+        [nameAndAliasView addSubview:zhuohao];
+
+        self.alias = [[UILabel alloc] initWithFrame:CGRectMake(65,50 ,120, 40)];
         [nameAndAliasView addSubview:self.name];
         [nameAndAliasView addSubview:self.alias];
         nameAndAliasView.layer.cornerRadius = 6;
         nameAndAliasView.layer.masksToBounds = YES;
-        
+        [self addSubview:nameAndAliasView];
+        self.name.text = @"张勇";
+        self.alias.text = @"Allen Aversion";
         //other imformation
-        self.mainInformaiton = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 130,320, self.frame.size.height-130)];
-    }
+        self.mainInformaiton = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 140,320, 290)];
+        [self.mainInformaiton setBackgroundColor:[UIColor redColor]];
+        self.mainInformaiton.contentSize = CGSizeMake(320, 500);
+        self.mainInformaiton.pagingEnabled = YES;
+        self.mainInformaiton.showsVerticalScrollIndicator = YES;
+        [self addSubview:self.mainInformaiton];
+        
+        }
     return self;
 }
 
@@ -66,5 +86,8 @@
     // Drawing code
 }
 */
-
+#pragma mark - selfmethod
+- (void)configWithData:(NSDictionary *)dic{
+    
+}
 @end

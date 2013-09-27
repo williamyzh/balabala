@@ -7,7 +7,7 @@
 //
 
 #import "MyViewController.h"
-
+#import "PersonDetailView.h"
 @interface MyViewController ()
 
 @end
@@ -27,10 +27,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor whiteColor];
-    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
-    label.text = @"myself";
-    [self.view addSubview:label];
+    self.view.backgroundColor = [UIColor colorWithRed:237/255 green:237/255 blue:237/255 alpha:1.0f];
+    PersonDetailView *personDetail = [[PersonDetailView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+    [self.view addSubview:personDetail];
 }
 
 - (void)didReceiveMemoryWarning
