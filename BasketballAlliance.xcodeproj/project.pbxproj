@@ -28,6 +28,7 @@
 		4B68F1EE17EC15FA00E6A02F /* TeammatesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B68F1ED17EC15FA00E6A02F /* TeammatesViewController.m */; };
 		4B68F1F117EC162500E6A02F /* NoticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B68F1F017EC162500E6A02F /* NoticeViewController.m */; };
 		4B68F1F417EC163100E6A02F /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B68F1F317EC163100E6A02F /* MyViewController.m */; };
+		4B86D80D17F676870066E174 /* pic_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B86D80C17F676870066E174 /* pic_bg.png */; };
 		4B8F509A17F52DAB0086EAE9 /* personimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B8F509917F52DAB0086EAE9 /* personimage.png */; };
 		4B8F50A317F531190086EAE9 /* PersonalDetailViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8F50A217F531190086EAE9 /* PersonalDetailViewCell.m */; };
 		4B8F50AB17F56E730086EAE9 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8F50AA17F56E730086EAE9 /* UIView+Frame.m */; };
@@ -73,6 +74,7 @@
 		4B68F1F017EC162500E6A02F /* NoticeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoticeViewController.m; sourceTree = "<group>"; };
 		4B68F1F217EC163100E6A02F /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
 		4B68F1F317EC163100E6A02F /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
+		4B86D80C17F676870066E174 /* pic_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic_bg.png; sourceTree = "<group>"; };
 		4B8F509917F52DAB0086EAE9 /* personimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = personimage.png; sourceTree = "<group>"; };
 		4B8F50A117F531190086EAE9 /* PersonalDetailViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalDetailViewCell.h; sourceTree = "<group>"; };
 		4B8F50A217F531190086EAE9 /* PersonalDetailViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalDetailViewCell.m; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 		4BF500C217E83D85001DD694 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				4B86D80C17F676870066E174 /* pic_bg.png */,
 				4B4F924E17F57E40005EA040 /* approve.jpg */,
 				4B8F509917F52DAB0086EAE9 /* personimage.png */,
 			);
@@ -296,6 +299,7 @@
 				4B68F1E817EC155600E6A02F /* HomeViewController.xib in Resources */,
 				4B8F509A17F52DAB0086EAE9 /* personimage.png in Resources */,
 				4B4F924F17F57E40005EA040 /* approve.jpg in Resources */,
+				4B86D80D17F676870066E174 /* pic_bg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,7 +363,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Ruiting Network Technology (Shanghai) Co., Ltd.";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -374,6 +379,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "77DECEE6-E3E4-4429-B986-DD6AC8948F9C";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -390,7 +397,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Ruiting Network Technology (Shanghai) Co., Ltd.";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -398,6 +406,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "77DECEE6-E3E4-4429-B986-DD6AC8948F9C";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

@@ -44,7 +44,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         //personal image
-        self.personImage = [[UIImageView alloc] initWithFrame:CGRectMake(20, 0, 100, 100)];
+        self.personImage = [[UIImageView alloc] initWithFrame:CGRectMake(10,10, 100, 100)];
         self.backgroundColor = [UIColor whiteColor];
         [self addSubview:self.personImage];
         
@@ -88,18 +88,24 @@
         UILabel *xihuanteam = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 60)];
         xihuanteam.text =@"喜欢的球队:";
         self.likeTeam = [[UILabel alloc] initWithFrame:CGRectMake(xihuanteam.right,xihuanteam.top, 100, 60)];
+        xihuanteam.backgroundColor = [UIColor clearColor];
+        self.likeTeam.backgroundColor = [UIColor clearColor];
         [self.mainInformaiton addSubview:self.likeTeam];
         [self.mainInformaiton addSubview:xihuanteam];
         
-        UILabel *ouxiang = [[UILabel alloc] initWithFrame:CGRectMake(0, xihuanteam.bottom, 60, 60)];
+        UILabel *ouxiang = [[UILabel alloc] initWithFrame:CGRectMake(20, xihuanteam.bottom, 60, 60)];
         ouxiang.text = @"偶像";
         self.NBAman = [[UILabel alloc] initWithFrame:CGRectMake(ouxiang.right, xihuanteam.bottom, 100, 60)];
+        ouxiang.layer.cornerRadius = 6.0;
+        ouxiang.layer.masksToBounds = YES;
         [self.mainInformaiton addSubview:ouxiang];
         [self.mainInformaiton addSubview:self.NBAman];
         
         UILabel *qiufeng = [[UILabel alloc] initWithFrame:CGRectMake(0, ouxiang.bottom, 60, 60)];
         qiufeng.text = @"模板";
         self.likeWho = [[UILabel alloc] initWithFrame:CGRectMake(qiufeng.right, ouxiang.bottom, 100, 60)];
+        qiufeng.backgroundColor = [UIColor clearColor];
+        self.likeWho.backgroundColor = [UIColor clearColor];
         [self.mainInformaiton addSubview:qiufeng];
         [self.mainInformaiton addSubview:self.likeWho];
         
@@ -143,6 +149,8 @@
         self.NBAman.text = @"Kobe Brant";
         self.likeTeam.text = @"湖人";
         self.personImage.image = [UIImage imageNamed:@"personimage"];
+        self.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"pic_bg.png" ]];
+        
         }
     return self;
 }
