@@ -36,7 +36,7 @@
 @synthesize breakthrough = _breakthrough;
 @synthesize assist = _assist;
 @synthesize backboard = _backboard;
-@synthesize personalScore = _personalScore;
+@synthesize personalScore = _personalScore; 
 @synthesize mainInformaiton = _mainInformaiton;
 @synthesize zan = _zan;
 - (id)initWithFrame:(CGRect)frame
