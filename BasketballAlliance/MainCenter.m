@@ -22,17 +22,16 @@ static MainCenter *_mainCenter;
 + (instancetype)shareDistance{
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        _mainCenter = [[MainCenter alloc] init];
-        
+        _mainCenter = [[MainCenter alloc] initWithType:NSMainQueueConcurrencyType];
     });
     return _mainCenter;
 }
-- (NSManagedObjectContext *)managedObjectContext{
+- (instancetype)initWithType:(NSManagedObjectContextConcurrencyType )type{
     if (!_managedObjectContext  ) {
-        _managedObjectContext = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSMainQueueConcurrencyType];
+        _managedObjectContext = [[NSManagedObjectContext alloc] initWithConcurrencyType:type];
         [_managedObjectContext setPersistentStoreCoordinator:self.persistentStoreCoordinator];
     }
-    return _managedObjectContext;
+    return self;
 }
 
 - (NSPersistentStoreCoordinator *)persistentStoreCoordinator{
@@ -42,14 +41,14 @@ static MainCenter *_mainCenter;
         NSString *filepath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
         NSString *file = [filepath stringByAppendingPathComponent:@"maindata.sqlite3"];
         
-        [_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:[NSURL URLWithString:file] options:nil error:&error];
+        [_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:[NSURL fileURLWithPath:file] options:nil error:&error];
     }
     return _persistentStoreCoordinator;
 }
 
 - (NSManagedObjectModel *)managedObjectModel{
     if (!_managedObjectModel) {
-        _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:[NSURL URLWithString:[[NSBundle mainBundle]pathForResource:@"MainModel" ofType:@"momd"]]];
+        _managedObjectModel = [NSManagedObjectModel mergedModelFromBundles:nil];
     }
     return _managedObjectModel;
 }
@@ -70,13 +69,13 @@ static MainCenter *_mainCenter;
     personalData.namealias = myDic[@"namealias"];
     personalData.approve = myDic[@"approve"];
     personalData.bestliketeam = myDic[@"bestliketeam"];
-    personalData.template = myDic[@"template"];
+    personalData.persontemplate = myDic[@"persontemplate"];
     personalData.teamname = myDic[@"teamname"];
     personalData.breakThrough = myDic[@"breakThrough"];
     personalData.assistent = myDic[@"assistent"];
     personalData.backboard = myDic[@"backboard"];
     personalData.score = myDic[@"score"];
-    personalData.personimage = myDic[@"personimage"];
+    personalData.personimage = (NSData *)myDic[@"personalimage"];
     personalData.personalphone = myDic[@"personalphone"];
     
     return personalData;
@@ -96,6 +95,16 @@ static MainCenter *_mainCenter;
     NSDictionary *resultDic = [result lastObject];
   
     return resultDic;
+}
+
+- (void)saveData{
+    __autoreleasing NSError *error;
+    if ( [self.managedObjectContext save:&error]) {
+        NSLog(@"save successful");
+    }
+    else{
+        NSLog(@"%@",error.localizedDescription);
+    }
 }
 
 @end

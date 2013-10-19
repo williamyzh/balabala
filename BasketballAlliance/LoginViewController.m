@@ -9,6 +9,7 @@
 #import "LoginViewController.h"
 #import "TeamInfoCell.h"
 #import "LoginView.h"
+#import "MainCenter.h"
 
 @interface LoginViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic, strong) UITableView *infotable;
@@ -21,6 +22,42 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    //creat data by myself
+    UIImage *image = [UIImage imageNamed:@"personimage.png"];
+    NSData *data = (NSData *)UIImagePNGRepresentation(image);
+    NSDictionary *dicdata = [NSDictionary dictionaryWithObjectsAndKeys:@"23",@"approve" ,
+                             @"10",@"assistent",
+                             @"15",@"backboard",
+                             @"Lakers",@"bestliketeam",
+                             @"Strong!", @"breakThrough",
+                             @"张翰",@"name",
+                             @"小艾弗森",@"namealias",
+                             @"13895666377",@"personalphone",
+                             data,@"personalimage",
+                             @"26",@"score",
+                             @"鲨鱼队",@"teamname",
+                             @"克里斯 保罗",@"persontemplate",nil];
+    [[MainCenter shareDistance] insertMyPersonalData:dicdata];
+    [[MainCenter shareDistance] saveData];
+    [[MainCenter shareDistance] fetchRequestFromType:NSPersonalDataType];
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:178/255 green:8/255 blue:10/255 alpha:1.0f];
     self.infotable = [[UITableView alloc] initWithFrame:CGRectMake(0, 60, self.view.frame.size.width, self.view.frame.size.height-40) style:UITableViewStylePlain];
     self.title = @"篮球联盟";

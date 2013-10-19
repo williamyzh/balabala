@@ -2,7 +2,7 @@
 //  MypersonalData.m
 //  BasketballAlliance
 //
-//  Created by 杨 志豪 on 13-10-18.
+//  Created by 杨 志豪 on 13-10-19.
 //  Copyright (c) 2013年 Anjuke Inc. All rights reserved.
 //
 
@@ -11,17 +11,17 @@
 
 @implementation MypersonalData
 
-@dynamic name;
-@dynamic namealias;
 @dynamic approve;
-@dynamic bestliketeam;
-@dynamic template;
-@dynamic teamname;
-@dynamic breakThrough;
 @dynamic assistent;
 @dynamic backboard;
-@dynamic score;
-@dynamic personimage;
+@dynamic bestliketeam;
+@dynamic breakThrough;
+@dynamic name;
+@dynamic namealias;
 @dynamic personalphone;
+@dynamic personimage;
+@dynamic score;
+@dynamic teamname;
+@dynamic persontemplate;
 
 @end

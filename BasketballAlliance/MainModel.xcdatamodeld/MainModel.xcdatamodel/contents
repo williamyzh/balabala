@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3396" systemVersion="12F45" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="MypersonalData" representedClassName="MypersonalData" syncable="YES">
-        <attribute name="approve" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="approve" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="assistent" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="backboard" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="backboard" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="bestliketeam" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="breakThrough" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="namealias" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="personalphone" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
-        <attribute name="personimage" optional="YES" attributeType="Date" syncable="YES"/>
-        <attribute name="score" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="personalphone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="personimage" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="persontemplate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="score" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="teamname" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="template" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <entity name="TeamInfo" representedClassName="TeamInfo" syncable="YES">
         <attribute name="approve" optional="YES" attributeType="String" syncable="YES"/>

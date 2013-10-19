@@ -26,5 +26,5 @@ typedef NS_ENUM(NSInteger, NSFetchDestnationType){
 - (MypersonalData *)insertMyPersonalData:(NSDictionary *)myDic;
 
 - (NSDictionary *)fetchRequestFromType:(NSFetchDestnationType )type;
-
+- (void)saveData;
 @end
