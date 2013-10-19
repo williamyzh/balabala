@@ -50,7 +50,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.nearbyTeam = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+    self.nearbyTeam = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height-40)];
     self.nearbyTeam.delegate = self;
     self.nearbyTeam.dataSource = self;
     [self.view addSubview:self.nearbyTeam];

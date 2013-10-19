@@ -92,7 +92,7 @@ static MainCenter *_mainCenter;
     }
     [fetchRequest setResultType:NSDictionaryResultType];
     __autoreleasing NSError *error;
-   NSArray *result = [self.managedObjectContext executeFetchRequest:fetchRequest error:&error];
+    NSArray *result = [self.managedObjectContext executeFetchRequest:fetchRequest error:&error];
     NSDictionary *resultDic = [result lastObject];
   
     return resultDic;
