@@ -163,7 +163,6 @@
 				4B37327B17E836A300B7003E /* AppDelegate.h */,
 				4B37327C17E836A300B7003E /* AppDelegate.m */,
 				4B37328417E836A300B7003E /* MainStoryboard.storyboard */,
-				4BE9ED451810CDFD00BA63C1 /* MainModel.xcdatamodeld */,
 				4B37327317E836A300B7003E /* Supporting Files */,
 			);
 			path = BasketballAlliance;
@@ -239,6 +238,7 @@
 		4BF500C117E83D7E001DD694 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				4BE9ED451810CDFD00BA63C1 /* MainModel.xcdatamodeld */,
 				4BE9ED4B1810D13400BA63C1 /* TeamInfo.h */,
 				4BE9ED4C1810D13400BA63C1 /* TeamInfo.m */,
 				4BE9ED481810D13400BA63C1 /* MypersonalData.h */,

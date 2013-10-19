@@ -20,7 +20,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-        self.teamMatesList = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.width) style:UITableViewStylePlain];
+        self.teamMatesList = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width,self.frame.size.width) style:UITableViewStylePlain];
         self.teamMatesList.delegate = self;
         self.teamMatesList.dataSource = self;
         [self addSubview:self.teamMatesList];
@@ -39,7 +39,7 @@
 #pragma mark - tableviewDatasource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 5;
+    return 30;
 }
 #pragma mark - tableviewDelegate
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{

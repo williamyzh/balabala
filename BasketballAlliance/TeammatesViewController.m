@@ -26,7 +26,7 @@
 }
 - (TeamMatesView *)teammatesList{
     if (_teammatesList == nil) {
-        _teammatesList = [[TeamMatesView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
+        _teammatesList = [[TeamMatesView alloc] initWithFrame:CGRectMake(0, 40, self.view.frame.size.width,self.view.frame.size.height)];
     }
     return _teammatesList;
 }
@@ -39,6 +39,7 @@
     label.text = @"teammates";
     [self.view addSubview:label];
     [self.view addSubview:self.teammatesList];
+
 }
 
 - (void)didReceiveMemoryWarning
