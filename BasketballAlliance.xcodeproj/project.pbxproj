@@ -33,6 +33,7 @@
 		4B8F509A17F52DAB0086EAE9 /* personimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B8F509917F52DAB0086EAE9 /* personimage.png */; };
 		4B8F50A317F531190086EAE9 /* PersonalDetailViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8F50A217F531190086EAE9 /* PersonalDetailViewCell.m */; };
 		4B8F50AB17F56E730086EAE9 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8F50AA17F56E730086EAE9 /* UIView+Frame.m */; };
+		4B9649611814F52600B8B38C /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B9649601814F52600B8B38C /* Account.m */; };
 		4B9B97AC17E9410B006F64AC /* teamSybol.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B9B97AB17E9410B006F64AC /* teamSybol.jpg */; };
 		4B9B97B317E9490D006F64AC /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B9B97B217E9490D006F64AC /* LoginView.m */; };
 		4BBAAF1317EC224D00331797 /* PropDetailOfTeamView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BBAAF1217EC224D00331797 /* PropDetailOfTeamView.m */; };
@@ -87,6 +88,8 @@
 		4B8F50A217F531190086EAE9 /* PersonalDetailViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalDetailViewCell.m; sourceTree = "<group>"; };
 		4B8F50A917F56E730086EAE9 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		4B8F50AA17F56E730086EAE9 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		4B96495F1814F52600B8B38C /* Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
+		4B9649601814F52600B8B38C /* Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
 		4B9B97AB17E9410B006F64AC /* teamSybol.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = teamSybol.jpg; sourceTree = "<group>"; };
 		4B9B97B117E9490D006F64AC /* LoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
 		4B9B97B217E9490D006F64AC /* LoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
@@ -239,6 +242,8 @@
 			isa = PBXGroup;
 			children = (
 				4BE9ED451810CDFD00BA63C1 /* MainModel.xcdatamodeld */,
+				4B96495F1814F52600B8B38C /* Account.h */,
+				4B9649601814F52600B8B38C /* Account.m */,
 				4B61D30D181289FD00A06929 /* MypersonalData.h */,
 				4B61D30E181289FD00A06929 /* MypersonalData.m */,
 				4BE9ED4B1810D13400BA63C1 /* TeamInfo.h */,
@@ -350,6 +355,7 @@
 				4BBAAF2717ED555300331797 /* TeamMatesView.m in Sources */,
 				4B4B926E17F33A55000DC349 /* PersonDetailView.m in Sources */,
 				4BE9ED501810D15800BA63C1 /* MainCenter.m in Sources */,
+				4B9649611814F52600B8B38C /* Account.m in Sources */,
 				4B8F50A317F531190086EAE9 /* PersonalDetailViewCell.m in Sources */,
 				4B8F50AB17F56E730086EAE9 /* UIView+Frame.m in Sources */,
 			);

@@ -7,13 +7,16 @@
 //
 
 #import "LoginView.h"
+#import "MainCenter.h"
 
 @interface LoginView ()<UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *PressLogin;
 @property(nonatomic, strong)IBOutlet UITextField *account;
 @property(nonatomic, strong)IBOutlet UITextField *password;
 @property(nonatomic) BOOL keyboardShow;
+
 @end
+
 @implementation LoginView
 @synthesize account = _account;
 @synthesize password = _password;
@@ -30,7 +33,14 @@
 
 - (IBAction)loginPress:(id)sender {
     if (delegate != nil && [delegate respondsToSelector:@selector(loginbutton)]) {
-        [delegate performSelector:@selector(loginbutton)];
+        NSDictionary *peronalAccount = [NSDictionary dictionaryWithObjectsAndKeys:self.account.text,@"name",self.password.text,@"password", nil];
+        if (        [[MainCenter shareDistance] WhetherAccountIsRight:peronalAccount]) {
+            [delegate performSelector:@selector(loginbutton)];
+        }
+        else{
+            UIAlertView *alertview = [[UIAlertView alloc] initWithTitle:@"sorry" message:@"您的账户或者密码不正确 请重新输入" delegate:self cancelButtonTitle:@"ok" otherButtonTitles:nil, nil];
+            [alertview show];
+        }
     }
 }
 

@@ -7,13 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "Account.h"
 @class TeamInfo;
 @class MypersonalData;
 
 typedef NS_ENUM(NSInteger, NSFetchDestnationType){
     NSPersonalDataType,
-    NSTeamInfoType
+    NSTeamInfoType,
+    NSAccountType
 };
 
 @interface MainCenter : NSObject
@@ -24,6 +25,8 @@ typedef NS_ENUM(NSInteger, NSFetchDestnationType){
 + (instancetype)shareDistance;
 - (TeamInfo *)insertTeamInfo:(NSDictionary *)teamDic;
 - (MypersonalData *)insertMyPersonalData:(NSDictionary *)myDic;
+- (Account *)insertAccount:(NSDictionary *)accountDic;
+- (BOOL)WhetherAccountIsRight:(NSDictionary *)dic;
 
 - (NSDictionary *)fetchRequestFromType:(NSFetchDestnationType )type;
 - (void)saveData;

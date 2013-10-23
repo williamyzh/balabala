@@ -92,6 +92,9 @@ static MainCenter *_mainCenter;
     else if (type == NSTeamInfoType){
         [fetchRequest setEntity:[NSEntityDescription entityForName:@"TeamInfo" inManagedObjectContext:self.managedObjectContext]];
     }
+    else if (type == NSAccountType){
+        [fetchRequest setEntity:[NSEntityDescription entityForName:@"Account" inManagedObjectContext:self.managedObjectContext]];
+    }
     [fetchRequest setResultType:NSDictionaryResultType];
     __autoreleasing NSError *error;
     NSArray *result = [self.managedObjectContext executeFetchRequest:fetchRequest error:&error];
@@ -110,4 +113,26 @@ static MainCenter *_mainCenter;
     }
 }
 
+//account
+- (Account *)insertAccount:(NSDictionary *)accountDic{
+    Account *account = [NSEntityDescription insertNewObjectForEntityForName:@"Account" inManagedObjectContext:self.managedObjectContext];
+    account.name = accountDic[@"name"];
+    account.password = accountDic[@"password"];
+    return account;
+}
+
+- (BOOL)WhetherAccountIsRight:(NSDictionary *)dic{
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Account"];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"name = %@ AND password = %@",dic[@"name"],dic[@"password"]];
+    [fetchRequest setPredicate:predicate];
+    [fetchRequest setResultType:NSDictionaryResultType];
+    __autoreleasing NSError *error;
+    NSArray *resultArray = [self.managedObjectContext executeFetchRequest:fetchRequest error:&error];
+    if ([resultArray count] >1) {
+        return YES;
+    }
+    else {
+        return NO;
+    }
+}
 @end

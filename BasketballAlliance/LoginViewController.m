@@ -24,23 +24,25 @@
     [super viewDidLoad];
     
     //creat data by myself
-    UIImage *image = [UIImage imageNamed:@"personimage.png"];
-    NSData *data = (NSData *)UIImagePNGRepresentation(image);
-    NSDictionary *dicdata = [NSDictionary dictionaryWithObjectsAndKeys:@"23",@"approve" ,
-                             @"10",@"assistent",
-                             @"15",@"backboard",
-                             @"Lakers",@"bestliketeam",
-                             @"Strong!", @"breakThrough",
-                             @"张翰",@"name",
-                             @"小艾弗森",@"namealias",
-                             @"13895666377",@"personalphone",
-                             data,@"personalimage",
-                             @"26",@"score",
-                             @"鲨鱼队",@"teamname",
-                             @"克里斯 保罗",@"persontemplate",nil];
-    [[MainCenter shareDistance] insertMyPersonalData:dicdata];
-    [[MainCenter shareDistance] saveData];
-    [[MainCenter shareDistance] fetchRequestFromType:NSPersonalDataType];
+//    UIImage *image = [UIImage imageNamed:@"personimage.png"];
+//    NSData *data = (NSData *)UIImagePNGRepresentation(image);
+//    NSDictionary *dicdata = [NSDictionary dictionaryWithObjectsAndKeys:@"23",@"approve" ,
+//                             @"10",@"assistent",
+//                             @"15",@"backboard",
+//                             @"Lakers",@"bestliketeam",
+//                             @"Strong!", @"breakThrough",
+//                             @"张翰",@"name",
+//                             @"小艾弗森",@"namealias",
+//                             @"13895666377",@"personalphone",
+//                             data,@"personalimage",
+//                             @"26",@"score",
+//                             @"鲨鱼队",@"teamname",
+//                             @"克里斯 保罗",@"persontemplate",nil];
+//    NSDictionary *account = [NSDictionary dictionaryWithObjectsAndKeys:@"yangzhihao",@"name",@"yangzhihao",@"password", nil];
+//    [[MainCenter shareDistance] insertAccount:account];
+//    [[MainCenter shareDistance] insertMyPersonalData:dicdata];
+//    [[MainCenter shareDistance] saveData];
+//    [[MainCenter shareDistance] fetchRequestFromType:NSAccountType];
     
     
     
